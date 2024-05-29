@@ -1,0 +1,48 @@
+body {
+    text-align: center;
+    background-color: #7efff9;
+    /* background-image: url('/WhatsApp\ Image\ 2024-05-25\ at\ 16.44.30_39fb407a.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#headerSection {
+    padding: 10px;
+}
+
+#headerSection h1 {
+    font-family: cursive;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#dropbox {
+    padding: 10px;
+    border-radius: 5px;
+    width: 15%;
+    border: 2px solid black;
+
+}
+
+#loginbtn {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    width: 10%;
+}
+
+#Address {
+    width: 29%;
+}
+
+#dropbox1 {
+    padding: 10px;
+    border-radius: 5px;
+    width: 30%;
+    border: 2px solid black;
+
+}

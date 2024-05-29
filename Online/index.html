@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submission</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+</head>
+
+<body>
+    <form action="/api/login.php" method="POST">
+        <h1>Online Voting System</h1>
+        <hr>
+        <label for="text">Mobile:</label>
+        <input type="text" id="text" name="text" placeholder="Mobile"><br>
+        <br>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Password"><br>
+        <br>
+        <br>
+
+        <div id="file">
+            Select Role: <select id="dropbox1" name="Role" required>
+                <option value="Voter">Voter</option>
+                <option value="Group">Group</option>
+            </select>
+        </div>
+        <br>
+        <br>
+        <button type="submit"
+            style="padding:10px; background-color: blue; color:white; border-radius: 5px; width:12%;">Register</button>
+        <br><br>
+        <b>Already user?</b><a href="/Routes/register.html" target="_blank">Register here</a>
+    </form>
+</body>
+
+</html>

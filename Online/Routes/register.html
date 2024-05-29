@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System - Registration</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <style>
+        #file {
+            border: 2px solid black;
+            padding: 10px;
+            width: 30%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Online Voting System</h1>
+    <hr>
+    <form action="/api/register.php" method="post" enctype="multipart/form-data">
+        <h2>Registration</h2>
+        <input type="text" name="Name" placeholder="Name" required />
+        <input type="number" name="number" placeholder="Mobile" required />
+        <br><br>
+        <input type="password" name="password" placeholder="Password" required />
+        <input type="password" name="cPassword" placeholder="Confirm Password" required />
+        <br><br>
+        <input type="text" name="Address" placeholder="Address" required />
+        <br><br>
+        <center>
+            <div id="file">
+                Upload File: <input type="file" name="file" required />
+            </div>
+        </center>
+        <br><br>
+        <center>
+            <div id="file">
+                Select Role:
+                <select id="dropbox1" name="Role" required>
+                    <option value="Voter">Voter</option>
+                    <option value="Group">Group</option>
+                </select>
+            </div>
+        </center>
+        <br><br>
+        <button type="submit"
+            style="padding: 10px; background-color: blue; color: white; border-radius: 5px; width: 12%;">Register</button>
+        <br><br>
+        <b>Already user?</b><a href="/index.html" target="_blank">Login here</a>
+    </form>
+</body>
+
+</html>
